@@ -18,7 +18,7 @@ function Circle(x, y, dx, dy, radius) {
         c.strokeStyle = 'red';
         c.stroke();
         c.fill();
-       c.fillStyle="brown";
+//        c.fillStyle="brown";
     }
     this.update = function () {
         if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
