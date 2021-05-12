@@ -16,9 +16,7 @@ function Circle(x, y, dx, dy, radius) {
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
         c.strokeStyle = 'red';
         c.stroke();
-        c.fillStyle = this.color;
         c.fill();
-        // c.fillStyle="";
     }
     this.update = function () {
         if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
@@ -52,5 +50,4 @@ for(var i=0;i<circleArray.length;i++){
     circleArray[i].update();
 }
  }
-
 animate();
